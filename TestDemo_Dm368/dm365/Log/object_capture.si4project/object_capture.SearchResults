@@ -1,0 +1,7 @@
+---- gl_cam_time Matches (7 in 4 files) ----
+drawDynamicData in ctrl.c (F:\DM368Data\2.Share4or3\object_capture\dm365) : 	if(gl_system_status == STATUS_REC)	   gl_cam_time++;
+drawDynamicData in ctrl.c (F:\DM368Data\2.Share4or3\object_capture\dm365) : 	else if(gl_system_status == STATUS_STOP)	gl_cam_time = 0;
+ctrl.h (F:\DM368Data\2.Share4or3\object_capture\dm365) line 138 : int gl_cam_time;
+ShowRECTime in mymenugui.c (F:\DM368Data\2.Share4or3\object_capture\dm365\encodets) : 	sprintf(timeShow,"%0.2d:%0.2d",gl_cam_time/60,gl_cam_time%60);
+writerThrFxn in writer.c (F:\DM368Data\2.Share4or3\object_capture\dm365\encodets) : 		if(gl_cam_time/60 == 10){
+writerThrFxn in writer.c (F:\DM368Data\2.Share4or3\object_capture\dm365\encodets) : 					gl_cam_time = 0;
